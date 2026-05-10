@@ -1,0 +1,208 @@
+{
+  "users": {
+    "user_kvq33l4ye": {
+      "balance": 2,
+      "completedTasks": [
+        {
+          "taskId": "3",
+          "timestamp": "2026-05-10T04:48:51.029Z",
+          "reward": 2
+        }
+      ],
+      "withdrawals": []
+    },
+    "asifulislam268": {
+      "username": "asifulislam268",
+      "password": "$2a$10$sg7qUzF6541MKtm4tnhajeQBC.xF9IoCEi1GGUzWcYSt8SU4AlIWe",
+      "balance": 5,
+      "completedTasks": [
+        {
+          "taskId": "daily_bonus",
+          "timestamp": "2026-05-10T05:24:57.426Z",
+          "reward": 5
+        }
+      ],
+      "withdrawals": [],
+      "joinedAt": "2026-05-10T05:17:58.248Z",
+      "lastBonusDate": "Sun May 10 2026"
+    }
+  },
+  "tasks": [
+    {
+      "id": "1",
+      "title": "AI Image Description",
+      "description": "Describe the scene in the provided image to help train AI.",
+      "reward": 5,
+      "type": "image"
+    },
+    {
+      "id": "2",
+      "title": "Text Summarization",
+      "description": "Summarize a short paragraph into one clear sentence.",
+      "reward": 3,
+      "type": "text"
+    },
+    {
+      "id": "3",
+      "title": "Math Puzzle",
+      "description": "Solve a simple logical math sequence.",
+      "reward": 2,
+      "type": "math"
+    },
+    {
+      "id": "4",
+      "title": "Sentiment Analysis",
+      "description": "Determine if the given review is positive or negative.",
+      "reward": 2,
+      "type": "sentiment"
+    },
+    {
+      "id": "5",
+      "title": "Basic Arithmetic",
+      "description": "Solve a quick addition or subtraction problem.",
+      "reward": 1.5,
+      "type": "math"
+    },
+    {
+      "id": "6",
+      "title": "Multiplication Challenge",
+      "description": "Fast multiplication to test your speed.",
+      "reward": 3,
+      "type": "math"
+    },
+    {
+      "id": "7",
+      "title": "Logic Captcha",
+      "description": "Verify you are human by solving a logical question.",
+      "reward": 1,
+      "type": "logic"
+    },
+    {
+      "id": "8",
+      "title": "Pattern Recognition",
+      "description": "Find the missing number in a simple pattern.",
+      "reward": 2.5,
+      "type": "math"
+    },
+    {
+      "id": "9",
+      "title": "Division Master",
+      "description": "Divide two numbers accurately.",
+      "reward": 4,
+      "type": "math"
+    },
+    {
+      "id": "10",
+      "title": "Quick Subtraction",
+      "description": "Subtract numbers fast.",
+      "reward": 1,
+      "type": "math"
+    },
+    {
+      "id": "11",
+      "title": "Mental Math",
+      "description": "Solve the equation in your head.",
+      "reward": 5,
+      "type": "math"
+    },
+    {
+      "id": "12",
+      "title": "Logical Reasoning",
+      "description": "Solve a situational logic problem.",
+      "reward": 3,
+      "type": "logic"
+    },
+    {
+      "id": "13",
+      "title": "English to Bangla",
+      "description": "Translate a simple English sentence to Bangla.",
+      "reward": 4,
+      "type": "translate"
+    },
+    {
+      "id": "14",
+      "title": "Emoji Movie Quiz",
+      "description": "Guess the movie name from emojis.",
+      "reward": 3,
+      "type": "emoji"
+    },
+    {
+      "id": "15",
+      "title": "Color Identification",
+      "description": "Identify the color based on its description or code.",
+      "reward": 2,
+      "type": "color"
+    },
+    {
+      "id": "16",
+      "title": "Global Capitals",
+      "description": "Name the capital city of the given country.",
+      "reward": 3.5,
+      "type": "geography"
+    },
+    {
+      "id": "17",
+      "title": "Riddle Solver",
+      "description": "Solve the riddle to prove your wit.",
+      "reward": 5,
+      "type": "riddle"
+    },
+    {
+      "id": "18",
+      "title": "Spelling Bee",
+      "description": "Find the correctly spelled word.",
+      "reward": 2,
+      "type": "spelling"
+    },
+    {
+      "id": "19",
+      "title": "Science Trivia",
+      "description": "Answer a simple scientific question.",
+      "reward": 3,
+      "type": "science"
+    },
+    {
+      "id": "20",
+      "title": "Word Reverse",
+      "description": "Type the reversed version of the given word.",
+      "reward": 1.5,
+      "type": "word"
+    },
+    {
+      "id": "21",
+      "title": "Sentence Scramble",
+      "description": "Unscramble the words to make a correct sentence.",
+      "reward": 6,
+      "type": "scramble"
+    },
+    {
+      "id": "22",
+      "title": "Vowel Counter",
+      "description": "Count the number of vowels in the given word.",
+      "reward": 2,
+      "type": "vowel"
+    },
+    {
+      "id": "23",
+      "title": "Heritage Trivia",
+      "description": "Answer a question about Bengali heritage.",
+      "reward": 4,
+      "type": "heritage"
+    },
+    {
+      "id": "24",
+      "title": "Day Logic",
+      "description": "Calculate the day based on the information.",
+      "reward": 3,
+      "type": "chrono"
+    },
+    {
+      "id": "25",
+      "title": "Small Binary",
+      "description": "Convert a very small binary number to decimal.",
+      "reward": 5,
+      "type": "binary"
+    }
+  ],
+  "withdrawals": []
+}
