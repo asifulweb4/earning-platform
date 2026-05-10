@@ -593,6 +593,8 @@ export default function App() {
   const [showAuth, setShowAuth] = useState(false);
   const [activeTask, setActiveTask] = useState<Task | null>(null);
   const [showActivation, setShowActivation] = useState(false);
+  const [showProfileMenu, setShowProfileMenu] = useState(false);
+
 
   const addToast = (message: string, type: 'success' | 'error' | 'info' = 'success') => {
     const id = Math.random().toString(36).substring(2, 9);
@@ -874,14 +876,34 @@ export default function App() {
                 <p className="text-[10px] text-stone-400 font-medium">Account</p>
                 <p className="text-xs md:text-sm font-bold text-stone-900">{userId?.toUpperCase()}</p>
               </div>
-              <div className="w-8 h-8 md:w-10 h-10 bg-stone-100 rounded-full flex items-center justify-center border border-stone-200 cursor-pointer group relative">
+              <div 
+                className="w-8 h-8 md:w-10 h-10 bg-stone-100 rounded-full flex items-center justify-center border border-stone-200 cursor-pointer relative"
+                onClick={() => setShowProfileMenu(!showProfileMenu)}
+              >
                 <UserIcon className="w-4 h-4 md:w-5 h-5 text-stone-400" />
-                <div className="absolute top-full right-0 mt-2 w-32 bg-white rounded-xl shadow-xl border border-stone-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all p-2 z-50">
-                  <button onClick={handleLogout} className="w-full flex items-center gap-2 p-2 text-xs font-bold text-red-500 hover:bg-red-50 rounded-lg">
-                    <LogOut className="w-3.5 h-3.5" /> Logout
-                  </button>
-                </div>
+                <AnimatePresence>
+                  {showProfileMenu && (
+                    <motion.div 
+                      initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                      className="absolute top-full right-0 mt-2 w-32 bg-white rounded-xl shadow-xl border border-stone-100 p-2 z-50"
+                    >
+                      <button 
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleLogout();
+                          setShowProfileMenu(false);
+                        }} 
+                        className="w-full flex items-center gap-2 p-2 text-xs font-bold text-red-500 hover:bg-red-50 rounded-lg"
+                      >
+                        <LogOut className="w-3.5 h-3.5" /> Logout
+                      </button>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
+
             </div>
           </div>
         </header>
